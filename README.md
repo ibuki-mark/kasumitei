@@ -1,73 +1,26 @@
-# React + TypeScript + Vite
+# ホームページ 霞亭
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 使用技術
+  -React ver 19.1.0
+  - Typescript Intersectionobserver
+  - tailwind css
 
-Currently, two official plugins are available:
+#　HPページ制作の背景
+　todo-mindというアプリを制作したとき、自分が求めているタイマーは実装できました。しかし、アプリのデザインやｐCの画面を小さくしたときの
+  レスポンシブ対応があまり出来なかった。そのため，CSSのフレームワーク、レスポンシブデザインについて理解を深めるために、旅館のHPページを
+  題材にしました。また、画面をスクロールしたときのアニメーションをTypescriptで学習する機会を良いと思いこのHPページを制作しました。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# HP機能
+　- 画面スクロール　Intersectionobserver
+  - ハンバーガーメニューの実装
+# ホームページ外観
+<img width="2842" height="1498" alt="スクリーンショット 2025-10-31 163321" src="https://github.com/user-attachments/assets/768361e0-56a1-4443-a378-8076d1f066ed" />
+<img width="2838" height="1266" alt="スクリーンショット 2025-10-31 163425" src="https://github.com/user-attachments/assets/482b5594-5c33-4cff-b6e7-3e63858cbb0e" />
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+ 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ 
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  
